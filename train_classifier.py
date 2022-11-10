@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# !/usr/bin/env python
 
 import argparse
 import tqdm
@@ -121,7 +121,7 @@ if __name__ == '__main__':
     LABEL.build_vocab(train_data)
 
     train_iter, test_iter = data.BucketIterator.splits((train_data, test_data), batch_size=args.batch_size)
-    
+
     model = TextClassifier(embed_dim=args.embed_dim,
                            num_heads=args.n_heads,
                            num_blocks=args.n_transformer_blocks,

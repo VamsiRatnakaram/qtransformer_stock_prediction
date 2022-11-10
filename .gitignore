@@ -1,0 +1,4 @@
+qml/
+.data/
+model_tf/
+__pycache__/
